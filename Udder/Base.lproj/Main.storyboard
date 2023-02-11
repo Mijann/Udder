@@ -23,23 +23,32 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresh milk on Demand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72w-Mo-B5L">
-                                <rect key="frame" x="111" y="144" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fresh milk on Demand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72w-Mo-B5L">
+                                <rect key="frame" x="111" y="152" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milk" translatesAutoresizingMaskIntoConstraints="NO" id="m0d-nc-CaU">
+                                <rect key="frame" x="0.0" y="405" width="393" height="413"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m0d-nc-CaU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9C4-p4-5Ye"/>
+                            <constraint firstItem="m0d-nc-CaU" firstAttribute="top" secondItem="72w-Mo-B5L" secondAttribute="bottom" constant="232" id="avu-8r-aAj"/>
+                            <constraint firstItem="m0d-nc-CaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i9h-il-gWi"/>
+                            <constraint firstItem="m0d-nc-CaU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ns7-I1-sQg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="-27"/>
+            <point key="canvasLocation" x="3.8167938931297707" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Milk" width="495.66665649414062" height="413"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
